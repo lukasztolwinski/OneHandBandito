@@ -6,7 +6,7 @@ class Wallet {
 
         //sprawdzanie czy uzytkownik ma odpowiednią ilosc srodkow do gry
         this.checkCanPlay = value => {
-            if (_money >= value) return true;
+            if (_money < value) return true;
             return false;
         }
 
