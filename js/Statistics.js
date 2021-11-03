@@ -13,10 +13,10 @@ class Statistics {
 
     showGamesStatistics() {
         let games = this.gameResults.length;
-        let wins = ;
-        let losses = ;
-        return [games, ]
+        let wins = this.gameResults.filter(result => result.win).length;
+        let losses = this.gameResults.filter(result => !result.win).length;
+        return [games, wins, losses];
     }
 }
 
-const stats = new Statistics;
+// const stats = new Statistics;
